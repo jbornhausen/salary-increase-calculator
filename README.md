@@ -22,7 +22,7 @@ O projeto foi criado com foco em praticar conceitos fundamentais de HTML, CSS e 
 ---
 
 ## 📷 Preview
-<!-- coloque aqui o print depois -->
+![Preview do projeto](Preview1.png)
 
 ---
 
