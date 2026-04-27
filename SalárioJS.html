@@ -4,98 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TECHLOGO - Final de Ano </title>
-    <style>
-           header {
-            display: flex;
-            align-items: center;
-            gap: 40px;
-            background-color: rgb(5, 14, 11);
-        }
-        #logo {
-            width: 150px;
-            height: auto;
-            display: inline-block;
-            margin-left: 40px;
-        }
-        h1 {
-            color: #b0aeae;
-            display: inline-block;
-        }
-        #user-container {
-            margin-left: auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-right: 50px;
-}
-        #user {
-            width: 30px;
-            height: 30px;
-            margin-bottom: 10px;
-        }
-        h4
-            {
-                color: #b0aeae;
-                position: static;
-                margin: 5px 0 0 0;
-            }
-        body {
-            font-family: Roboto, sans-serif;
-            background-color: #cdcdcd;
-            margin: 0px;
-        }
-        p {
-            font-family: system-ui, -apple-system, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: large;
-           text-align: center;
-            color: #666;
-            margin: 20px;
-        }
-        #introdução {
-            background-color: #eaeaea;
-            border-radius: 24px;
-            padding: 10px;
-            margin: 20px;
-        }
-        #formulário {
-            background-color: #eaeaea;
-            border-radius: 24px;
-            padding: 20px;
-            margin: 20px;
-        }
-        h3 {
-            font-size: large;
-            color: #333;
-        }
-        label {
-            font-size: large;
-            color: #333;
-            margin: 0px 400 10px 0px;
-        }
-        input {
-            font-size: large;
-            padding: 10px;
-            width: 100%;
-            box-sizing: border-box;
-            margin-bottom: 20px;
-        }
-        button {
-           background-color: rgb(255, 145, 0);
-           font-size: large;
-           border-radius: 8px;
-           padding: 10px 15px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="java.js">
 </head>
 
 <header>
 <img src="Logo.svg" alt="Logo da empresa" id="logo">
 <h1>Final de ano com a TECHLOGO</h1>
+
 <div id="user-container">
     <img src="profile.png" alt="User Icon" id="user">
     <h4>Joãozinho da Silva</h4>
 </div>
 </header>
+
 <body>
    <div id="introdução">
     <p>Chegou a epóca do ano onde nós aumentamos seu salário para você ser reconhecido e progredir na carreira!</p>
@@ -125,28 +47,5 @@
     
       </form>
    </div>
-
-<script>
-/* var nome = window.prompt("Qual é o seu nome?")
-var salário = Number(window.prompt("Qual é o seu salário?"))
-var tempoDeEmpresa = window.prompt ("Quanto tempo você tem de empresa?")
-
-var aumento = tempoDeEmpresa <= 3 ? salário * 0.05 
-: tempoDeEmpresa <= 10 ?
-salário * 0.1 : salário * 0.15
-
-var porcentagem = tempoDeEmpresa <= 3? '5%' : 
-tempoDeEmpresa <= 10 ?
-'10%' : '15%'
-
-document.write (
-    `Olá ${nome.toUpperCase()} <p>
-    Salário atual ${salário.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} <p> 
-    A porcentagem de aumento foi de ${porcentagem} <p>
-    Seu aumento será de  ${aumento.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} <p>
-    Totalizando ${(salário + aumento).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} <p>
-    `) *\
-
-</script>
 </body>
 </html>
