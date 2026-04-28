@@ -1,3 +1,9 @@
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    calcular();
+  }
+});
+
 function calcular () {
 var nome = document.getElementById('nome').value
 var salario = Number (document.getElementById('salario').value)
@@ -25,4 +31,10 @@ resultado.innerHTML =
     Totalizando ${(salario + aumento).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} 
     `
      resultado.style.display = 'block'
+     resultado.scrollIntoView({ behavior: "smooth" })
+  confetti({
+      particleCount: 400,
+      spread: 90,
+      origin: { y: 1.2 }
+    });
   }
