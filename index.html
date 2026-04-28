@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHLOGO - Final de Ano </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="Logo.svg" alt="Logo da empresa" id="logo">
+        <h1>Final de ano com a TECHLOGO</h1>
+        
+        <div id="user-container">
+            <img src="profile.png" alt="User Icon" id="user">
+            <h4>Joãozinho da Silva</h4>
+        </div>
+        </header>
+
+   <div id="introdução">
+    <p>Chegou a epóca do ano onde nós aumentamos seu salário para você ser reconhecido e progredir na carreira!</p>
+    <p>Nosso cálculo é com base no tempo de empresa, então quanto mais tempo você tiver, maior será o aumento!</p>
+    <p>Se você tiver até 3 anos de empresa, o aumento será de 5% do seu salário atual.</p>
+    <p>Se você tiver entre 4 e 10 anos de empresa, o aumento será de 10%. </p>
+    <p>E se você tiver mais de 10 anos de empresa, o aumento será de 15% do seu salário atual.</p>
+   </div>
+
+   <div id="formulario">
+    <h3>Vamos começar? Preencha os dados abaixo para calcular o seu aumento:</h3>
+    <form>
+        <!-- Nome -->
+        <label>Qual seu nome?</label>
+        <input type="text" id="nome" placeholder="Digite seu nome">
+        <br>
+        <!-- Salário -->
+        <label>Qual é o seu salário atual?</label>
+        <input type="number" id="salario" placeholder="Ex: 2500">
+        <br>
+        <!-- Tempo -->
+        <label>Quanto tempo você tem de empresa?</label>
+        <input type="number" id="tempo" placeholder="Em anos">
+        <br>
+        <!-- Botão -->
+        <button type="button" onclick="calcular()">Calcular aumento</button>
+        <div id="resultado"></div>
+      </form>
+   </div>
+   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+   <script src="java.js"></script>
+</body>
+</html>
